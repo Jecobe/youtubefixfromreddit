@@ -1,0 +1,14 @@
+[uBlock Origin]
+! Title: Youtube Server Injected Ad Fix
+! Last modified: 2024/06/22
+! Expires: 1 days
+! Homepage: https://github.com/Jecobe/youtubefixfromreddit
+! Licence: Unlicense
+!
+
+!!!!!! OG LINK: https://new.reddit.com/r/Adblock/comments/1dkjd04/updated_method_to_bypass_youtubes_ad_blocker/
+  
+youtube.com##+js(set,yt.config_.openPopupConfig.supportedPopups.adBlockMessageViewModel, false)
+youtube.com##+js(set, Object.prototype.adBlocksFound, 0)
+youtube.com##+js(set, ytplayer.config.args.raw_player_response.adPlacements, [])
+youtube.com##+js(set, Object.prototype.hasAllowedInstreamAd, true)
